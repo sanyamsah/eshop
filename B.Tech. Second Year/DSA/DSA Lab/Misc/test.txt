@@ -1,0 +1,99 @@
+//{ Driver Code Starts
+//Initial Template for Java
+
+
+import java.util.*;
+import java.math.*;
+
+class Multiply{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        while(t-->0){
+            String a=sc.next();
+            String b=sc.next();
+            Solution g=new Solution();
+            System.out.println(g.multiplyStrings(a,b));
+        }
+    }
+}
+// } Driver Code Ends
+
+
+//User function Template for Java
+
+class Solution
+{
+    public String multiplyStrings(String s1,String s2)
+    {
+        //code here.
+        int l1=s1.length();
+        int l2=s2.length();
+        int[] res=new int[l1+l2];
+        int pf=0;
+        for(int i=l2-1;i>=0;i--){
+            int inum=s2.charAt(i) - '0';
+            int j=l1-1;
+            int carry=0;
+            int k=res.length-1-pf;
+            // for(int j=l1-1;j>=0;j--){
+                
+            //     int num2=s1.charAt(j) - '0';
+            //     int prod=num1*num2+carry+res[k];
+            //     carry=prod/10;
+            //     res[k]=prod%10;
+            //     k--;
+            // }
+            while(j>=0 || carry != 0){
+                int jnum = j>=0 ? s1.charAt(j) - '0' : 0;
+                j--;
+                int prod = inum * jnum + carry + res[k];
+                res[k]=prod%10;
+                carry=prod/10;
+                k--;
+            }
+            pf++;
+        }
+        int flag=0,count=0;
+        for(int i=0;i<res.length;i++){
+            if(res[i]==0 && flag ==0){
+                count++;
+                continue;
+            }
+            else{
+                flag=1;
+                break;
+            }
+        }
+        // int size=res.length-count;
+        // char[] result = new char[size];
+        // int k=count;
+        // for(int i=0;i<result.length;i++){
+        //     result[i]=(char)res[k];
+        //     k++;
+        // }
+        // return result.length == 0 ? "0" : result.toString();
+        //-------------------------------------------------------------------
+        // String result="";
+        // int flag=0;
+        // for(int i : res){
+        //     if(i==0 && flag==0){
+        //         continue;
+        //     }
+        //     else{
+        //         flag=1;
+        //         result += res;
+        //     }
+        // }
+        // return result;
+        //-----------------------------------------------------------------------
+        StringBuilder result = new StringBuilder();
+        for (int num : res) {
+            if (!(result.length() == 0 && num == 0)) {
+                result.append(num);
+            }
+        }
+
+        return result.length() == 0 ? "0" : result.toString();
+    }
+}
