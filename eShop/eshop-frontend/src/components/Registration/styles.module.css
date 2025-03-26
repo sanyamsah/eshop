@@ -1,0 +1,50 @@
+.wrapper {
+  width: 500px;
+  /* margin: 0 auto; */
+  margin: 50px auto 150px auto;
+  padding: 25px;
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.heading2{
+    text-align: center;
+}
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(254, 246, 233);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid grey;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 20px;
+}
+
+button {
+  width: 100%;
+  color: white;
+  background-color: #89680b;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgb(80, 83, 81);
+}
+
+#register-button {
+  text-decoration: none;
+  border-radius: 20px;
+}
+button:hover {
+  background-color: #ad964b;
+}

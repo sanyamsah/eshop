@@ -1,0 +1,13 @@
+.wrapper {
+    background-color: antiquewhite;
+    border-radius: 20px;
+    padding: 30px 50px;
+    width: 100%; /* Ensure the wrapper takes full width of its container */
+    margin-bottom: 20px; /* Add spacing between the wrappers */
+}
+
+.wrapper img {
+    width: 100%; /* Ensure the image takes full width of the wrapper */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            background: linear-gradient(to right bottom, #051d37, #004d79, #00849c, #00ba8b, #12eb47);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        img {
+            width: 120px;
+            border-radius: 50%;
+        }
+
+        .container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .wrapper1 {
+            display: inline-block;
+            background-color: rgb(200, 237, 253);
+            width: 300px;
+            padding: 20px;
+            /* margin-top: 50px; */
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .wrapper1 img {
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .name {
+            text-align: center;
+        }
+
+        .wrapper2 {
+            background-color: rgb(200, 237, 253);
+            width: 500px;
+            padding: 20px;
+            /* margin-top: 50px; */
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgb(127, 211, 247);
+        }
+
+        .wrapper3 {
+            background-color: rgb(200, 237, 253);
+            width: 300px;
+            height: 170px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="color: whitesmoke">Student Profile</h1>
+        <div class="container">
+            <div class="wrapper1">
+                <h2>Personal Information</h2>
+                <img src="./img/photo.png" alt="Image not found!">
+                <p class="name"><b>Sanyam Sah</b></p>
+                <p><b>Roll no.:</b> 21053318</p>
+                <p><b>DoB: </b>September 10, 2001</p>
+                <p><b>Address: </b>Bhubaneswar, Odisha, India</p>
+                <p><b>Phone no.: </b>9608514966</p>
+                <p><b>Email: </b>sanyamsah25@gmail.com</p>
+            </div>
+            <div class="wrapper2">
+                <h2>Education</h2>
+                <table>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Board/University</th>
+                        <th>GPA</th>
+                    </tr>
+                    <tr>
+                        <td>Matriculation</td>
+                        <td>B.K.V.M. Secondary School</td>
+                        <td>3.65/4</td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate</td>
+                        <td>Shikshadeep Higher Secondary School</td>
+                        <td>3.50/4</td>
+                    </tr>
+                    <tr>
+                        <td>B.Tech. (CSE)</td>
+                        <td>KIIT University</td>
+                        <td>9.13/10</td>
+                    </tr>
+                </table>
+                <p><b>Skills: </b>Java, Python, C, C++, HTML, CSS, MySQL, React, Node, Spring Boot</p>
+                <h2>Projects</h2>
+                <ul>
+                    <li>Face Recognition using Vision Transformer (ViT)</li>
+                    <li>Potato Disease Detection using Convolutional Vision Transformer (ConViT)</li>
+                    <li>Video Classification using Video Vision Transformer (ViViT)</li>
+                </ul>
+            </div>
+            <div class="wrapper3">
+                <h2>Volunteering</h2>
+                <p><b>KIIT International Students' Society</b></p>
+                <ul>
+                    <li>Post: Graphics Design Lead</li>
+                    <li>Duration: Oct, 2022 to Feb, 2025</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
